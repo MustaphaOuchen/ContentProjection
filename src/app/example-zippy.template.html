@@ -1,0 +1,5 @@
+<ng-content></ng-content>
+<div *ngIf="expanded" [id]="contentId">
+    <!--ngTemplateOutlet directive to render a given <ng-template> element-->
+    <ng-container [ngTemplateOutlet]="content.templateRef"></ng-container>
+</div>
